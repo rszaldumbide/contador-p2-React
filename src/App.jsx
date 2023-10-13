@@ -6,22 +6,18 @@ import { useState } from "react"; /* nos permite los hooks trabajar con estados 
 
 function App() {
   /* Cuando la pagina tiene interactividad, aqui se debe definir las funciones */
-  const [numClics, setNumClics] =
-    useState(
-      0
-    ); /* en donde esta el 0 es el valor inicial al que se va a reiniciar siempre */
+  const [numClics, setNumClics] = useState(0);
+  /* en donde esta el 0 es el valor inicial al que se va a reiniciar siempre */
 
   const manejarClic = () => {
     console.log("Me clickeaste");
-    setNumClics(
-      numClics + 1
-    ); /* aqui se esta diciendo que cada vez que se de clic, se sume 1 */
+    setNumClics(numClics + 1);
+    /* aqui se esta diciendo que cada vez que se de clic, se sume 1 */
   };
   const reiniciarContador = () => {
     console.log("Me reiniciaste");
-    setNumClics(
-      0
-    ); /* aqui se esta diciendo que cada vez que se de clic, se reinicie a 0 */
+    setNumClics(0);
+    /* aqui se esta diciendo que cada vez que se de clic, se reinicie a 0 */
   };
 
   return (
